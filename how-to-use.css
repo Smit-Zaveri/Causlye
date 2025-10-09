@@ -1,0 +1,201 @@
+/* CSS for How To Use Section */
+.how-to-use-section {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: sans-serif;
+}
+
+.how-to-use-section h2 {
+  font-size: 2.5rem;
+  color: #00AEEF;
+  margin-bottom: 40px;
+  font-family: 'Impact', sans-serif;
+}
+
+.how-to-use-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.step-diamond {
+  width: 240px;
+  height: 160px;
+  background-color: #000;
+  /* transform: rotate(45deg); */
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.step-diamond.active {
+  border-color: #00AEEF;
+}
+
+.step-diamond-inner {
+  /* transform: rotate(-45deg); */
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  position: relative;
+  width: 141%;
+  height: 141%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-diamond-inner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.step-diamond-inner span {
+  position: relative;
+  z-index: 1;
+}
+
+.step-arrow {
+  width: 30px;
+  height: 2px;
+  background-color: #00AEEF;
+  margin: 0 20px;
+  position: relative;
+  top: 0px; /* Align with the center of diamonds */
+}
+
+.step-arrow::after {
+  content: '';
+  position: absolute;
+  right: -5px;
+  top: -4px;
+  border: solid #00AEEF;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+}
+
+.how-to-use-carousel {
+  position: relative;
+  max-width: 70%;
+  height: 550px;
+  margin: 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.carousel-image {
+  width: 100%;
+  display: none;
+  border-radius: 15px;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.carousel-dots {
+  margin-top: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #00AEEF;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .step-diamond {
+    width: 180px;
+    height: 120px;
+  }
+
+  .how-to-use-carousel {
+    max-width: 85%;
+    height: auto;
+  }
+
+  .how-to-use-section h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-to-use-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+    margin: 15px 0;
+  }
+
+  .step-diamond {
+    width: 200px;
+    height: 130px;
+  }
+
+  .how-to-use-carousel {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .how-to-use-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .step-diamond {
+    width: 160px;
+    height: 110px;
+  }
+
+  .step-diamond-inner {
+    font-size: 1rem;
+  }
+
+  .how-to-use-carousel {
+    max-width: 100%;
+  }
+
+  .how-to-use-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .how-to-use-section {
+    padding: 30px 10px;
+  }
+}

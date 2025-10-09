@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="reels.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="why-choose-us.css">
+  <link rel="stylesheet" href="how-to-use.css">
+  <link rel="stylesheet" href="demo-section.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -35,14 +37,12 @@
       <p class="tagline">Just Spray, Wipe, And Watch Grease Vanish — Without Costly Deep-Cleaning Crews.</p>
       <h1>Get A <span class="spotless">Spotless Kitchen</span><br>In <span class="minutes">5 Minutes</span></h1>
       
-      
-
-      <!-- <div class="product-circle"> -->
+      <div class="product-container">
         <div class="green-circle"></div>
         <img src="images/product-bottle.png" alt="Causlye Bottle" class="product-img">
         <a href="#" class="shop-btn product-shop-btn">Shop Now</a>
       </div>
-    <!-- </div> -->
+    </div>
 
     <!-- Social Icons -->
     <div class="social-icons">
@@ -104,6 +104,8 @@
         </div>
     </div>
 </div>
+
+
 
 
   <section class="reels-section" id="customer-reels">
@@ -180,10 +182,113 @@
     </div>
   </section>
 
+
+  <section class="how-to-use-section">
+    <h2>How To Use</h2>
+    <div class="how-to-use-steps">
+      <div class="step-item" onclick="currentSlide(1)">
+        <div class="step-diamond active" id="step-1">
+          <div class="step-diamond-inner">
+            <img src="images/how-to-use-1.jpg" alt="Pour">
+            <span>Pour</span>
+          </div>
+        </div>
+      </div>
+      <div class="step-arrow"></div>
+      <div class="step-item" onclick="currentSlide(2)">
+        <div class="step-diamond" id="step-2">
+          <div class="step-diamond-inner">
+            <img src="images/how-to-use-2.jpg" alt="Wait">
+            <span>Wait</span>
+          </div>
+        </div>
+      </div>
+      <div class="step-arrow"></div>
+      <div class="step-item" onclick="currentSlide(3)">
+        <div class="step-diamond" id="step-3">
+          <div class="step-diamond-inner">
+            <img src="images/how-to-use-3.jpg" alt="Wash">
+            <span>Wash</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="how-to-use-carousel">
+      <img src="images/how-to-use-1.jpg" class="carousel-image active" alt="Step 1: Pour the solution">
+      <img src="images/how-to-use-2.jpg" class="carousel-image" alt="Step 2: Wait for it to act">
+      <img src="images/how-to-use-3.jpg" class="carousel-image" alt="Step 3: Wash it off">
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+  
+
+
+
+  <section class="demo-section">
+    <div class="demo-content">
+      <h2>Only 5 Free Demo Slots Available This Month.</h2>
+      <button class="demo-button">Book Now</button>
+    </div>
+  </section>
+
   <script async src="//www.instagram.com/embed.js"></script>
 
+  <script>
+    let slideIndex = 1;
+    let slideInterval;
 
+    showSlides(slideIndex);
 
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+      resetInterval();
+    }
 
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+      resetInterval();
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("carousel-image");
+      let dots = document.getElementsByClassName("dot");
+      let steps = document.getElementsByClassName("step-diamond");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      for (i = 0; i < steps.length; i++) {
+          steps[i].className = steps[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      steps[slideIndex-1].className += " active";
+    }
+
+    function autoSlides() {
+      slideIndex++;
+      showSlides(slideIndex);
+    }
+
+    function startInterval() {
+        slideInterval = setInterval(autoSlides, 5000);
+    }
+
+    function resetInterval() {
+        clearInterval(slideInterval);
+        startInterval();
+    }
+
+    startInterval();
+  </script>
 </body>
 </html>
