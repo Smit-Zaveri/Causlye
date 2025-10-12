@@ -22,7 +22,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark overlay */
 }
 
 .demo-content {
@@ -36,7 +37,7 @@
   font-weight: 700;
   margin-inline: 10%;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .demo-button {
@@ -57,10 +58,18 @@
 }
 
 /* Responsive Styles */
+@media (max-width: 1024px) {
+  .demo-content h2 {
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .demo-content h2 {
     font-size: 2.5rem;
+    margin-inline: 5%;
   }
+
   .demo-section {
     padding: 80px 20px;
   }
@@ -69,10 +78,13 @@
 @media (max-width: 480px) {
   .demo-content h2 {
     font-size: 2rem;
+    margin-inline: 2%;
   }
+
   .demo-section {
     padding: 60px 20px;
   }
+
   .demo-button {
     padding: 12px 25px;
     font-size: 1rem;
