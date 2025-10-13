@@ -1,477 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Causlye - Spotless Kitchen</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reels.css">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="why-choose-us.css">
-  <link rel="stylesheet" href="how-to-use.css">
-  <link rel="stylesheet" href="demo-section.css">
-  <link rel="stylesheet" href="difference-section.css">
-  <link rel="stylesheet" href="faq.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causlye - Spotless Kitchen</title>
+    <link rel="stylesheet" href="combined.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="images/logo.png" alt="Causlye Logo">
-      <span>Causlye</span>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">FAQs</a>
-    </nav>
-    <a href="#" class="shop-btn">Shop Now</a>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <!-- Background Elements -->
-    <img src="images/bg-kitchen.png" alt="Kitchen Background" >
-
-    <div class="hero-content">
-      <p class="tagline">Just Spray, Wipe, And Watch Grease Vanish — Without Costly Deep-Cleaning Crews.</p>
-      <h1>Get A <span class="spotless">Spotless Kitchen</span><br>In <span class="minutes">5 Minutes</span></h1>
-      
-      <div class="product-container">
-        <div class="green-circle"></div>
-        <img src="images/product-bottle.png" alt="Causlye Bottle" class="product-img">
-        <a href="#" class="shop-btn product-shop-btn">Shop Now</a>
-      </div>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="social-icons">
-      <a href="#" class="social-instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-      <a href="#" class="social-whatsapp"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
-      <a href="#" class="social-facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="Facebook"></a>
-    </div>
-  </section>
-
-  <div class="features-banner">
-    <div class="features-track">
-        <div class="feature">
-            <img src="images/safe.png" alt="100% Safe"/>
-            <span>100% Safe</span>
+    <header class="navbar">
+        <div class="logo"><img loading="lazy" src="images/logo.png" alt="Causlye Logo"><span>Causlye</span></div>
+        <nav><a href="#">Home</a><a href="#">About</a><a href="#">FAQs</a></nav><a href="#" class="shop-btn">Shop
+            Now</a>
+    </header>
+    <section class="hero"><img loading="lazy" src="images/bg-kitchen.png" alt="Kitchen Background">
+        <div class="green-circle" aria-hidden="true"></div>
+        <div class="hero-content">
+            <p class="tagline">Just Spray, Wipe, And Watch Grease Vanish — Without Costly Deep-Cleaning Crews.</p>
+            <h1>Get A <span class="spotless">Spotless Kitchen</span><br>In <span class="minutes">5 Minutes</span></h1>
         </div>
-        <div class="feature">
-            <img src="images/power.png" alt="Ultra Power"/>
-            <span>Ultra Power</span>
+        <!-- product-container moved outside of .hero-content so it can be anchored to the bottom of .hero -->
+        <div class="product-container">
+            <img loading="lazy" src="images/product-bottle.png" alt="Causlye Bottle" class="product-img">
+            <a href="#" class="shop-btn product-shop-btn">Shop Now</a>
         </div>
-        <div class="feature">
-            <img src="images/clock.png" alt="Instant Results"/>
-            <span>Instant Results</span>
+        <div class="social-icons"><a href="#" class="social-instagram"><img loading="lazy"
+                    src="images/skill-icons_instagram.png" alt="Instagram"></a><a href="#" class="social-whatsapp"><img
+                    loading="lazy" src="images/logos_whatsapp-icon.png" alt="WhatsApp"></a><a href="#"
+                class="social-facebook"><img loading="lazy" src="images/logos_facebook.png" alt="Facebook"></a>
         </div>
-        <div class="feature">
-            <img src="images/money.png" alt="Saves Costs"/>
-            <span>Saves Costs</span>
-        </div>
-        <div class="feature">
-            <img src="images/eco.png" alt="Eco-Friendly"/>
-            <span>Eco-Friendly</span>
-        </div>
-        <div class="feature">
-            <img src="images/codicon_thumbsup.png" alt="Easy to Apply"/>
-            <span>Easy To Apply</span>
-        </div>
-        <div class="feature">
-            <img src="images/safe.png" alt="100% Safe"/>
-            <span>100% Safe</span>
-        </div>
-        <div class="feature">
-            <img src="images/power.png" alt="Ultra Power"/>
-            <span>Ultra Power</span>
-        </div>
-        <div class="feature">
-            <img src="images/clock.png" alt="Instant Results"/>
-            <span>Instant Results</span>
-        </div>
-        <div class="feature">
-            <img src="images/money.png" alt="Saves Costs"/>
-            <span>Saves Costs</span>
-        </div>
-        <div class="feature">
-            <img src="images/eco.png" alt="Eco-Friendly"/>
-            <span>Eco-Friendly</span>
-        </div>
-        <div class="feature">
-            <img src="images/codicon_thumbsup.png" alt="Easy to Apply"/>
-            <span>Easy To Apply</span>
+    </section>
+    <div class="features-banner">
+        <div class="features-track">
+            <div class="feature"><img loading="lazy" src="images/safe.png" alt="100% Safe" /><span>100% Safe</span>
+            </div>
+            <div class="feature"><img loading="lazy" src="images/power.png" alt="Ultra Power" /><span>Ultra Power</span>
+            </div>
+            <div class="feature"><img loading="lazy" src="images/clock.png" alt="Instant Results" /><span>Instant
+                    Results</span></div>
+            <div class="feature"><img loading="lazy" src="images/money.png" alt="Saves Costs" /><span>Saves Costs</span>
+            </div>
+            <div class="feature"><img loading="lazy" src="images/eco.png" alt="Eco-Friendly" /><span>Eco-Friendly</span>
+            </div>
+            <div class="feature"><img loading="lazy" src="images/codicon_thumbsup.png" alt="Easy to Apply" /><span>Easy
+                    To Apply</span></div>
+            <div class="feature"><img loading="lazy" src="images/safe.png" alt="100% Safe" /><span>100% Safe</span>
+            </div>
+            <div class="feature"><img loading="lazy" src="images/power.png" alt="Ultra Power" /><span>Ultra Power</span>
+            </div>
+            <div class="feature"><img loading="lazy" src="images/clock.png" alt="Instant Results" /><span>Instant
+                    Results</span></div>
+            <div class="feature"><img loading="lazy" src="images/money.png" alt="Saves Costs" /><span>Saves Costs</span>
+            </div>
+            <div class="feature"><img loading="lazy" src="images/eco.png" alt="Eco-Friendly" /><span>Eco-Friendly</span>
+            </div>
+            <div class="feature"><img loading="lazy" src="images/codicon_thumbsup.png" alt="Easy to Apply" /><span>Easy
+                    To Apply</span></div>
         </div>
     </div>
-</div>
-
-
-
-
-  <section class="reels-section" id="customer-reels">
-    <div class="reels-header">
-      <h2>Not Just Clean, Causlye Clean</h2>
-      <p>Real Results From Customers</p>
-    </div>
-    <div class="reels-grid">
-      <div class="reel-card">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by @dhiraj._.04</a></p></div></blockquote>
-      </div>
-      <div class="reel-card">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by @dhiraj._.04</a></p></div></blockquote>
-      </div>
-      <div class="reel-card">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by @dhiraj._.04</a></p></div></blockquote>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="why-choose-us">
-    <h2>Why Choose Us</h2>
-    <div class="why-choose-us-grid">
-      <div class="why-choose-us-column left">
-        <div class="feature-item">
-          <img src="images/safe.png" alt="100% Safe" class="icon">
-          <div>
-            <h3>100% Safe</h3>
-            <p>Non-Toxic Ingredients, Safe For Kitchens, Staff, And Food Environments.</p>
-          </div>
+    <section class="reels-section" id="customer-reels">
+        <div class="reels-header">
+            <h2>Not Just Clean, Causlye Clean</h2>
+            <p>Real Results From Customers</p>
         </div>
-        <div class="feature-item">
-          <img src="images/clock.png" alt="Instant Results" class="icon">
-          <div>
-            <h3>Instant Results</h3>
-            <p>No Waiting, No Scrubbing—Spray And Watch Grease Dissolve Within Minutes.</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <img src="images/eco.png" alt="Eco-Friendly" class="icon">
-          <div>
-            <h3>Eco-Friendly</h3>
-            <p>Biodegradable Formula That Cleans Tough Oil Without Harming The Environment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="product-image-container">
-        <img src="images/product-bottle-2.png" alt="Causlye Prokitchen Bottle">
-      </div>
-      <div class="why-choose-us-column right">
-        <div class="feature-item">
-          <img src="images/power.png" alt="Ultra Power" class="icon">
-          <div>
-            <h3>Ultra Power</h3>
-            <p>Industrial-Grade Strength Designed For Heavy Commercial Kitchens.</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <img src="images/money.png" alt="Saves Costs" class="icon">
-          <div>
-            <h3>Saves Costs</h3>
-            <p>Cut Expensive Deep-Cleaning Crew Bills—Get Professional Results In-House.</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <img src="images/codicon_thumbsup.png" alt="Easy To Apply" class="icon">
-          <div>
-            <h3>Easy To Apply</h3>
-            <p>Versatile Solution For Hoods, Chimneys, Grills, And Kitchen Tiles.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="how-to-use-section">
-    <h2>How To Use</h2>
-    <div class="how-to-use-steps">
-      <div class="step-item" onclick="currentSlide(1)">
-        <div class="step-diamond active" id="step-1">
-          <div class="step-diamond-inner">
-            <img src="images/how-to-use-1.jpg" alt="Pour">
-            <span>Pour</span>
-          </div>
-        </div>
-      </div>
-      <div class="step-arrow"></div>
-      <div class="step-item" onclick="currentSlide(2)">
-        <div class="step-diamond" id="step-2">
-          <div class="step-diamond-inner">
-            <img src="images/how-to-use-2.jpg" alt="Wait">
-            <span>Wait</span>
-          </div>
-        </div>
-      </div>
-      <div class="step-arrow"></div>
-      <div class="step-item" onclick="currentSlide(3)">
-        <div class="step-diamond" id="step-3">
-          <div class="step-diamond-inner">
-            <img src="images/how-to-use-3.jpg" alt="Wash">
-            <span>Wash</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="how-to-use-carousel">
-      <img src="images/how-to-use-1.jpg" class="carousel-image active" alt="Step 1: Pour the solution">
-      <img src="images/how-to-use-2.jpg" class="carousel-image" alt="Step 2: Wait for it to act">
-      <img src="images/how-to-use-3.jpg" class="carousel-image" alt="Step 3: Wash it off">
-    </div>
-    <div class="carousel-dots">
-      <span class="dot active" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-  </section>
-  
-
-
-
-  <section class="demo-section">
-    <div class="demo-content">
-      <h2>Only 5 Free Demo Slots Available This Month.</h2>
-      <button class="demo-button">Book Now</button>
-    </div>
-  </section>
-
-  <section class="diff-section">
-        <div class="container">
-            <h1>See The Difference Causlye Makes</h1>
-            <p class="subtitle">
-                Before-And-After Results From Kitchens Just Like Yours—No Stock Photos, Only Real Transformations.
-            </p>
-
-            <div class="main-content">
-                <!-- Left Section -->
-                <div class="left-section mobile-hide">
-                    <div>
-                        <div class="side-text-left">
-                            From Greasy<br>
-                            Chimneys To<br>
-                            Spotless<br>
-                            Shine.
-                        </div>
-                        <div class="white-line"></div>
+        <div class="reels-grid">
+            <div class="reel-card">
+                <blockquote class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-version="14"
+                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    <div style="padding:16px;"><a
+                            href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                            target="_blank">
+                            <div style=" display: flex; flex-direction: row; align-items: center;">
+                                <div
+                                    style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                                    height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                                    xmlns:xlink="https://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                            <g>
+                                                <path
+                                                    d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                            <div style="padding-top: 8px;">
+                                <div
+                                    style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                    View this post on Instagram</div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div>
+                            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                <div>
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                    </div>
+                                    <div
+                                        style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                    </div>
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                    </div>
+                                </div>
+                                <div style="margin-left: 8px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                    </div>
+                                    <div
+                                        style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                    </div>
+                                </div>
+                                <div style="margin-left: auto;">
+                                    <div
+                                        style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                    </div>
+                                    <div
+                                        style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                </div>
+                                <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                </div>
+                            </div>
+                        </a>
+                        <p
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                target="_blank">A post shared by @dhiraj._.04</a>
+                        </p>
                     </div>
-
-                    <div class="left-images">
-                        <div class="transformation-image img-left-small">
-                            <span class="badge before">Before</span>
-                            <span class="badge after">After</span>
-                            <img src="images/diff-1.png" alt="Kitchen sink transformation">
-                        </div>
+                </blockquote>
+            </div>
+            <div class="reel-card">
+                <blockquote class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-version="14"
+                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    <div style="padding:16px;"><a
+                            href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                            target="_blank">
+                            <div style=" display: flex; flex-direction: row; align-items: center;">
+                                <div
+                                    style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                                    height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                                    xmlns:xlink="https://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                            <g>
+                                                <path
+                                                    d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                            <div style="padding-top: 8px;">
+                                <div
+                                    style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                    View this post on Instagram</div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div>
+                            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                <div>
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                    </div>
+                                    <div
+                                        style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                    </div>
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                    </div>
+                                </div>
+                                <div style="margin-left: 8px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                    </div>
+                                    <div
+                                        style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                    </div>
+                                </div>
+                                <div style="margin-left: auto;">
+                                    <div
+                                        style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                    </div>
+                                    <div
+                                        style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                </div>
+                                <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                </div>
+                            </div>
+                        </a>
+                        <p
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                target="_blank">A post shared by @dhiraj._.04</a>
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="reel-card">
+                <blockquote class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-version="14"
+                    style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    <div style="padding:16px;"><a
+                            href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                            target="_blank">
+                            <div style=" display: flex; flex-direction: row; align-items: center;">
+                                <div
+                                    style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px"
+                                    height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                                    xmlns:xlink="https://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                            <g>
+                                                <path
+                                                    d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                            <div style="padding-top: 8px;">
+                                <div
+                                    style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                    View this post on Instagram</div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div>
+                            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                <div>
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                    </div>
+                                    <div
+                                        style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                    </div>
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                    </div>
+                                </div>
+                                <div style="margin-left: 8px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                    </div>
+                                    <div
+                                        style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                    </div>
+                                </div>
+                                <div style="margin-left: auto;">
+                                    <div
+                                        style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                    </div>
+                                    <div
+                                        style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                </div>
+                                <div
+                                    style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                </div>
+                            </div>
+                        </a>
+                        <p
+                            style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/reel/DKUfRJ8piga/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                target="_blank">A post shared by @dhiraj._.04</a>
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <div class="why-choose-us-grid">
+            <div class="why-choose-us-column left">
+                <div class="feature-item"><img loading="lazy" src="images/safe.png" alt="100% Safe" class="icon">
+                    <div>
+                        <h3>100% Safe</h3>
+                        <p>Non-Toxic Ingredients, Safe For Kitchens, Staff, And Food Environments.</p>
                     </div>
                 </div>
-
-                <!-- Center Section -->
+                <div class="feature-item"><img loading="lazy" src="images/clock.png" alt="Instant Results" class="icon">
+                    <div>
+                        <h3>Instant Results</h3>
+                        <p>No Waiting, No Scrubbing—Spray And Watch Grease Dissolve Within Minutes.</p>
+                    </div>
+                </div>
+                <div class="feature-item"><img loading="lazy" src="images/eco.png" alt="Eco-Friendly" class="icon">
+                    <div>
+                        <h3>Eco-Friendly</h3>
+                        <p>Biodegradable Formula That Cleans Tough Oil Without Harming The Environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-image-container"><img loading="lazy" src="images/product-bottle-2.png"
+                    alt="Causlye Prokitchen Bottle"></div>
+            <div class="why-choose-us-column right">
+                <div class="feature-item"><img loading="lazy" src="images/power.png" alt="Ultra Power" class="icon">
+                    <div>
+                        <h3>Ultra Power</h3>
+                        <p>Industrial-Grade Strength Designed For Heavy Commercial Kitchens.</p>
+                    </div>
+                </div>
+                <div class="feature-item"><img loading="lazy" src="images/money.png" alt="Saves Costs" class="icon">
+                    <div>
+                        <h3>Saves Costs</h3>
+                        <p>Cut Expensive Deep-Cleaning Crew Bills—Get Professional Results In-House.</p>
+                    </div>
+                </div>
+                <div class="feature-item"><img loading="lazy" src="images/codicon_thumbsup.png" alt="Easy To Apply"
+                        class="icon">
+                    <div>
+                        <h3>Easy To Apply</h3>
+                        <p>Versatile Solution For Hoods, Chimneys, Grills, And Kitchen Tiles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-to-use-section">
+        <h2>How To Use</h2>
+        <div class="how-to-use-steps">
+            <div class="step-item" onclick="currentSlide(1)">
+                <div class="step-diamond active" id="step-1">
+                    <div class="step-diamond-inner"><img loading="lazy" src="images/how-to-use-1.jpg"
+                            alt="Pour"><span>Pour</span></div>
+                </div>
+            </div>
+            <div class="step-arrow"></div>
+            <div class="step-item" onclick="currentSlide(2)">
+                <div class="step-diamond" id="step-2">
+                    <div class="step-diamond-inner"><img loading="lazy" src="images/how-to-use-2.jpg"
+                            alt="Wait"><span>Wait</span></div>
+                </div>
+            </div>
+            <div class="step-arrow"></div>
+            <div class="step-item" onclick="currentSlide(3)">
+                <div class="step-diamond" id="step-3">
+                    <div class="step-diamond-inner"><img loading="lazy" src="images/how-to-use-3.jpg"
+                            alt="Wash"><span>Wash</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="how-to-use-carousel"><img loading="lazy" src="images/how-to-use-1.jpg" class="carousel-image active"
+                alt="Step 1: Pour the solution"><img loading="lazy" src="images/how-to-use-2.jpg" class="carousel-image"
+                alt="Step 2: Wait for it to act"><img loading="lazy" src="images/how-to-use-3.jpg"
+                class="carousel-image" alt="Step 3: Wash it off"></div>
+        <div class="carousel-dots"><span class="dot active" onclick="currentSlide(1)"></span><span class="dot"
+                onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span></div>
+    </section>
+    <section class="demo-section">
+        <div class="demo-content">
+            <h2>Only 5 Free Demo Slots Available This Month.</h2><button class="demo-button">Book Now</button>
+        </div>
+    </section>
+    <section class="diff-section">
+        <div class="container">
+            <h1>See The Difference Causlye Makes</h1>
+            <p class="subtitle"> Before-And-After Results From Kitchens Just Like Yours—No Stock Photos, Only Real
+                Transformations. </p>
+            <div class="main-content">
+                <div class="left-section mobile-hide">
+                    <div>
+                        <div class="side-text-left"> From Greasy<br> Chimneys To<br> Spotless<br> Shine. </div>
+                        <div class="white-line"></div>
+                    </div>
+                    <div class="left-images">
+                        <div class="transformation-image img-left-small"><span class="badge before">Before</span><span
+                                class="badge after">After</span><img loading="lazy" src="images/diff-1.png"
+                                alt="Kitchen sink transformation"></div>
+                    </div>
+                </div>
                 <div class="center-section">
                     <div class="center-left-images">
                         <div class="desktop-hide">
-                            <div class="side-text-left">
-                                From Greasy<br>
-                                Chimneys To<br>
-                                Spotless<br>
-                                Shine.
-                            </div>
+                            <div class="side-text-left"> From Greasy<br> Chimneys To<br> Spotless<br> Shine. </div>
                             <div class="white-line"></div>
                         </div>
-                        <div class="transformation-image img-cl-top">
-                            <span class="badge before">Before</span>
-                            <span class="badge after">After</span>
-                            <img src="images/diff-2.png" alt="Kitchen chimney transformation">
-                        </div>
-                        <div class="transformation-image img-cl-bottom">
-                            <span class="badge before">Before</span>
-                            <span class="badge after">After</span>
-                            <img src="images/diff-3.png" alt="Kitchen counter transformation">
-                        </div>
+                        <div class="transformation-image img-cl-top"><span class="badge before">Before</span><span
+                                class="badge after">After</span><img loading="lazy" src="images/diff-2.png"
+                                alt="Kitchen chimney transformation"></div>
+                        <div class="transformation-image img-cl-bottom"><span class="badge before">Before</span><span
+                                class="badge after">After</span><img loading="lazy" src="images/diff-3.png"
+                                alt="Kitchen counter transformation"></div>
                     </div>
-
-                    <div class="product-container">
-                        <img src="images/product-bottle-3.png" alt="Causlye Disinfectant Product" class="product-image">
-                    </div>
-
+                    <div class="product-container"><img loading="lazy" src="images/product-bottle-3.png"
+                            alt="Causlye Disinfectant Product" class="product-image"></div>
                     <div class="center-right-images">
-                        <div class="transformation-image img-cr-top">
-                            <span class="badge before">Before</span>
-                            <span class="badge after">After</span>
-                            <img src="images/diff-4.png" alt="Kitchen surface transformation">
-                        </div>
-                        <div class="transformation-image img-cr-bottom">
-                            <span class="badge before">Before</span>
-                            <span class="badge after">After</span>
-                            <img src="images/diff-5.png" alt="Kitchen hood transformation">
-                        </div>
+                        <div class="transformation-image img-cr-top"><span class="badge before">Before</span><span
+                                class="badge after">After</span><img loading="lazy" src="images/diff-4.png"
+                                alt="Kitchen surface transformation"></div>
+                        <div class="transformation-image img-cr-bottom"><span class="badge before">Before</span><span
+                                class="badge after">After</span><img loading="lazy" src="images/diff-5.png"
+                                alt="Kitchen hood transformation"></div>
                         <div class="desktop-hide">
-                            <div class="side-text-right">
-                                Proven In<br>
-                                Minutes,<br>
-                                Not Hours.
-                            </div>
+                            <div class="side-text-right"> Proven In<br> Minutes,<br> Not Hours. </div>
                             <div class="white-line-right"></div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Right Section -->
                 <div class="right-section mobile-hide">
                     <div class="right-images">
-                        <div class="transformation-image img-right-single">
-                            <span class="badge before">Before</span>
-                            <span class="badge after">After</span>
-                            <img src="images/diff-6.png" alt="Kitchen stove transformation">
-                        </div>
+                        <div class="transformation-image img-right-single"><span class="badge before">Before</span><span
+                                class="badge after">After</span><img loading="lazy" src="images/diff-6.png"
+                                alt="Kitchen stove transformation"></div>
                     </div>
-
                     <div>
-                        <div class="side-text-right">
-                            Proven In<br>
-                            Minutes,<br>
-                            Not Hours.
-                        </div>
+                        <div class="side-text-right"> Proven In<br> Minutes,<br> Not Hours. </div>
                         <div class="white-line-right"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <div class="faq-container">
-        <!-- Main Content -->
         <div class="faq-main-content">
             <div class="faq-header-section">
                 <h1 class="faq-main-title">FAQs</h1>
-                <p class="faq-subtitle">We Know Switching Cleaners Is A Big Decision. Here's Everything You Need To Feel 100% Confident With Causlye.</p>
+                <p class="faq-subtitle">We Know Switching Cleaners Is A Big Decision. Here's Everything You Need To Feel
+                    100% Confident With Causlye.</p>
             </div>
-
             <div class="faq-content-wrapper">
                 <div class="faq-faq-list">
                     <div class="faq-faq-item">
-                        <div class="faq-faq-row">
-                            <span class="faq-faq-number">1.</span>
-                            <span class="faq-faq-text">How safe is it for food environments?</span>
-                            <button class="faq-plus-btn" aria-expanded="false" aria-controls="answer-1">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="10" fill="#00bcd4"/>
-                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round" style="display: none;"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="faq-faq-answer" id="answer-1" role="region" aria-label="Answer 1">
-                            Causlye is 100% food-safe when used as directed. It's non-toxic, biodegradable, and leaves no harmful residue—so your kitchen stays spotless and compliant.
-                        </div>
+                        <div class="faq-faq-row"><span class="faq-faq-number">1.</span><span class="faq-faq-text">How
+                                safe is it for food environments?</span><button class="faq-plus-btn"
+                                aria-expanded="false" aria-controls="answer-1"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="#00bcd4" />
+                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" style="display: none;" />
+                                </svg></button></div>
+                        <div class="faq-faq-answer" id="answer-1" role="region" aria-label="Answer 1"> Causlye is 100%
+                            food-safe when used as directed. It's non-toxic, biodegradable, and leaves no harmful
+                            residue—so your kitchen stays spotless and compliant. </div>
                     </div>
-
                     <div class="faq-faq-item">
-                        <div class="faq-faq-row">
-                            <span class="faq-faq-number">2.</span>
-                            <span class="faq-faq-text">Will it damage stainless steel or surfaces?</span>
-                            <button class="faq-plus-btn" aria-expanded="false" aria-controls="answer-2">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="10" fill="#00bcd4"/>
-                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round" style="display: none;"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="faq-faq-answer" id="answer-2" role="region" aria-label="Answer 2">
-                            No. Causlye is engineered for commercial kitchens and tested on stainless steel, tiles, and chimneys. It dissolves grease without corroding or scratching surfaces.
-                        </div>
+                        <div class="faq-faq-row"><span class="faq-faq-number">2.</span><span class="faq-faq-text">Will
+                                it damage stainless steel or surfaces?</span><button class="faq-plus-btn"
+                                aria-expanded="false" aria-controls="answer-2"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="#00bcd4" />
+                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" style="display: none;" />
+                                </svg></button></div>
+                        <div class="faq-faq-answer" id="answer-2" role="region" aria-label="Answer 2"> No. Causlye is
+                            engineered for commercial kitchens and tested on stainless steel, tiles, and chimneys. It
+                            dissolves grease without corroding or scratching surfaces. </div>
                     </div>
-
                     <div class="faq-faq-item">
-                        <div class="faq-faq-row">
-                            <span class="faq-faq-number">3.</span>
-                            <span class="faq-faq-text">What if I'm not satisfied?</span>
-                            <button class="faq-plus-btn" aria-expanded="false" aria-controls="answer-3">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="10" fill="#00bcd4"/>
-                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round" style="display: none;"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="faq-faq-answer" id="answer-3" role="region" aria-label="Answer 3">
-                            Zero risk. If you don't see spotless results, you're covered by our Results or Refund Guarantee—no questions asked.
-                        </div>
+                        <div class="faq-faq-row"><span class="faq-faq-number">3.</span><span class="faq-faq-text">What
+                                if I'm not satisfied?</span><button class="faq-plus-btn" aria-expanded="false"
+                                aria-controls="answer-3"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="#00bcd4" />
+                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" style="display: none;" />
+                                </svg></button></div>
+                        <div class="faq-faq-answer" id="answer-3" role="region" aria-label="Answer 3"> Zero risk. If you
+                            don't see spotless results, you're covered by our Results or Refund Guarantee—no questions
+                            asked. </div>
                     </div>
-
                     <div class="faq-faq-item">
-                        <div class="faq-faq-row">
-                            <span class="faq-faq-number">4.</span>
-                            <span class="faq-faq-text">Who is it for / not for?</span>
-                            <button class="faq-plus-btn" aria-expanded="false" aria-controls="answer-4">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="10" fill="#00bcd4"/>
-                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round" style="display: none;"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="faq-faq-answer" id="answer-4" role="region" aria-label="Answer 4">
-                            Causlye is designed for restaurants, cafés, hotels, and any heavy-oil kitchen. It's not recommended for households or light cleaning—it's simply too powerful.
-                        </div>
+                        <div class="faq-faq-row"><span class="faq-faq-number">4.</span><span class="faq-faq-text">Who is
+                                it for / not for?</span><button class="faq-plus-btn" aria-expanded="false"
+                                aria-controls="answer-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="#00bcd4" />
+                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" style="display: none;" />
+                                </svg></button></div>
+                        <div class="faq-faq-answer" id="answer-4" role="region" aria-label="Answer 4"> Causlye is
+                            designed for restaurants, cafés, hotels, and any heavy-oil kitchen. It's not recommended for
+                            households or light cleaning—it's simply too powerful. </div>
                     </div>
-
                     <div class="faq-faq-item">
-                        <div class="faq-faq-row">
-                            <span class="faq-faq-number">5.</span>
-                            <span class="faq-faq-text">How soon will I see results?</span>
-                            <button class="faq-plus-btn" aria-expanded="false" aria-controls="answer-5">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <circle cx="12" cy="12" r="10" fill="#00bcd4"/>
-                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round" style="display: none;"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="faq-faq-answer" id="answer-5" role="region" aria-label="Answer 5">
-                            Instantly. Spray, wait a few seconds, wipe—and watch grease vanish. No long waiting times, no scrubbing marathons.
-                        </div>
+                        <div class="faq-faq-row"><span class="faq-faq-number">5.</span><span class="faq-faq-text">How
+                                soon will I see results?</span><button class="faq-plus-btn" aria-expanded="false"
+                                aria-controls="answer-5"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="#00bcd4" />
+                                    <path class="faq-plus-icon" d="M12 8V16M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path class="faq-minus-icon" d="M8 12H16" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" style="display: none;" />
+                                </svg></button></div>
+                        <div class="faq-faq-answer" id="answer-5" role="region" aria-label="Answer 5"> Instantly. Spray,
+                            wait a few seconds, wipe—and watch grease vanish. No long waiting times, no scrubbing
+                            marathons. </div>
                     </div>
                 </div>
-
                 <div class="faq-question-section">
-                    <div class="faq-sponge-icon">
-                        
-<svg width="302" height="276" viewBox="0 0 302 276" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M156.55 19.6536C117.58 1.31608 92.3181 28.3657 84.9375 46.3581L83.698 50.4537C86.3551 85.9456 50.2686 98.8943 31.0789 100.25C1.55617 106.461 1.31014 136.728 5.98457 149.791C13.5254 170.864 20.9919 185.652 22.5911 192.307C20.8197 225.729 24.3132 239.506 26.2814 242.218C47.5378 280.667 85.3269 271.794 101.564 262.552C129.906 240.961 152.737 242.711 160.61 246.284C188.952 266.396 214.489 267.727 223.715 265.879C271.541 249.908 263.078 211.409 252.868 194.156C240.173 160.438 258.158 127.115 268.737 114.668C298.259 69.4162 282.76 42.0825 271.32 34.0721C259.511 19.8754 224.822 33.456 205.632 42.5754C191.978 46.6422 164.177 27.2942 156.55 19.6536Z" fill="#6EAA40"/>
-<path d="M163.011 10.4765C122.521 -8.57455 96.2729 19.5276 88.6043 38.2201L87.3166 42.475C90.0772 79.348 52.5832 92.8005 32.6449 94.2088C1.97059 100.662 1.71497 132.106 6.57173 145.677C14.4067 167.571 22.1645 182.934 23.826 189.848C21.9856 224.57 25.6154 238.884 27.6603 241.701C49.7458 281.646 89.0089 272.428 105.88 262.826C135.327 240.395 159.049 242.213 167.228 245.926C196.676 266.82 223.209 268.203 232.795 266.283C282.487 249.69 273.694 209.693 263.086 191.768C249.896 156.739 268.581 122.12 279.573 109.188C310.247 62.1754 294.143 33.7781 282.257 25.4561C269.987 10.7069 233.945 24.816 214.007 34.2903C199.82 38.5153 170.935 18.4144 163.011 10.4765Z" stroke="#6EAA40" stroke-width="8"/>
-<path d="M135.088 165.472V164.087C135.124 157.659 135.727 152.546 136.899 148.746C138.107 144.946 139.811 141.892 142.013 139.584C144.214 137.24 146.896 135.092 150.056 133.139C152.222 131.789 154.158 130.316 155.862 128.718C157.602 127.084 158.969 125.273 159.964 123.284C160.958 121.26 161.455 119.005 161.455 116.519C161.455 113.714 160.798 111.281 159.484 109.222C158.17 107.162 156.395 105.564 154.158 104.428C151.956 103.291 149.488 102.723 146.754 102.723C144.232 102.723 141.835 103.274 139.562 104.375C137.325 105.44 135.461 107.073 133.969 109.275C132.513 111.441 131.697 114.193 131.519 117.531H112.556C112.734 110.784 114.367 105.138 117.457 100.593C120.582 96.0471 124.701 92.638 129.815 90.3653C134.964 88.0925 140.646 86.9562 146.86 86.9562C153.643 86.9562 159.609 88.1458 164.758 90.5251C169.942 92.9043 173.973 96.2957 176.849 100.699C179.761 105.067 181.217 110.252 181.217 116.253C181.217 120.301 180.56 123.924 179.246 127.12C177.968 130.316 176.139 133.156 173.76 135.642C171.381 138.128 168.558 140.348 165.29 142.301C162.414 144.076 160.053 145.923 158.206 147.84C156.395 149.758 155.045 152.013 154.158 154.605C153.305 157.162 152.862 160.323 152.826 164.087V165.472H135.088ZM144.357 198.71C141.161 198.71 138.408 197.574 136.1 195.301C133.792 193.029 132.638 190.259 132.638 186.992C132.638 183.796 133.792 181.061 136.1 178.789C138.408 176.516 141.161 175.379 144.357 175.379C147.517 175.379 150.251 176.516 152.56 178.789C154.903 181.061 156.075 183.796 156.075 186.992C156.075 189.158 155.525 191.129 154.424 192.904C153.359 194.68 151.938 196.1 150.163 197.166C148.423 198.196 146.487 198.71 144.357 198.71Z" fill="white"/>
-</svg>
-
-                    </div>
-
+                    <div class="faq-sponge-icon"><svg width="302" height="276" viewBox="0 0 302 276" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M156.55 19.6536C117.58 1.31608 92.3181 28.3657 84.9375 46.3581L83.698 50.4537C86.3551 85.9456 50.2686 98.8943 31.0789 100.25C1.55617 106.461 1.31014 136.728 5.98457 149.791C13.5254 170.864 20.9919 185.652 22.5911 192.307C20.8197 225.729 24.3132 239.506 26.2814 242.218C47.5378 280.667 85.3269 271.794 101.564 262.552C129.906 240.961 152.737 242.711 160.61 246.284C188.952 266.396 214.489 267.727 223.715 265.879C271.541 249.908 263.078 211.409 252.868 194.156C240.173 160.438 258.158 127.115 268.737 114.668C298.259 69.4162 282.76 42.0825 271.32 34.0721C259.511 19.8754 224.822 33.456 205.632 42.5754C191.978 46.6422 164.177 27.2942 156.55 19.6536Z"
+                                fill="#6EAA40" />
+                            <path
+                                d="M163.011 10.4765C122.521 -8.57455 96.2729 19.5276 88.6043 38.2201L87.3166 42.475C90.0772 79.348 52.5832 92.8005 32.6449 94.2088C1.97059 100.662 1.71497 132.106 6.57173 145.677C14.4067 167.571 22.1645 182.934 23.826 189.848C21.9856 224.57 25.6154 238.884 27.6603 241.701C49.7458 281.646 89.0089 272.428 105.88 262.826C135.327 240.395 159.049 242.213 167.228 245.926C196.676 266.82 223.209 268.203 232.795 266.283C282.487 249.69 273.694 209.693 263.086 191.768C249.896 156.739 268.581 122.12 279.573 109.188C310.247 62.1754 294.143 33.7781 282.257 25.4561C269.987 10.7069 233.945 24.816 214.007 34.2903C199.82 38.5153 170.935 18.4144 163.011 10.4765Z"
+                                stroke="#6EAA40" stroke-width="8" />
+                            <path
+                                d="M135.088 165.472V164.087C135.124 157.659 135.727 152.546 136.899 148.746C138.107 144.946 139.811 141.892 142.013 139.584C144.214 137.24 146.896 135.092 150.056 133.139C152.222 131.789 154.158 130.316 155.862 128.718C157.602 127.084 158.969 125.273 159.964 123.284C160.958 121.26 161.455 119.005 161.455 116.519C161.455 113.714 160.798 111.281 159.484 109.222C158.17 107.162 156.395 105.564 154.158 104.428C151.956 103.291 149.488 102.723 146.754 102.723C144.232 102.723 141.835 103.274 139.562 104.375C137.325 105.44 135.461 107.073 133.969 109.275C132.513 111.441 131.697 114.193 131.519 117.531H112.556C112.734 110.784 114.367 105.138 117.457 100.593C120.582 96.0471 124.701 92.638 129.815 90.3653C134.964 88.0925 140.646 86.9562 146.86 86.9562C153.643 86.9562 159.609 88.1458 164.758 90.5251C169.942 92.9043 173.973 96.2957 176.849 100.699C179.761 105.067 181.217 110.252 181.217 116.253C181.217 120.301 180.56 123.924 179.246 127.12C177.968 130.316 176.139 133.156 173.76 135.642C171.381 138.128 168.558 140.348 165.29 142.301C162.414 144.076 160.053 145.923 158.206 147.84C156.395 149.758 155.045 152.013 154.158 154.605C153.305 157.162 152.862 160.323 152.826 164.087V165.472H135.088ZM144.357 198.71C141.161 198.71 138.408 197.574 136.1 195.301C133.792 193.029 132.638 190.259 132.638 186.992C132.638 183.796 133.792 181.061 136.1 178.789C138.408 176.516 141.161 175.379 144.357 175.379C147.517 175.379 150.251 176.516 152.56 178.789C154.903 181.061 156.075 183.796 156.075 186.992C156.075 189.158 155.525 191.129 154.424 192.904C153.359 194.68 151.938 196.1 150.163 197.166C148.423 198.196 146.487 198.71 144.357 198.71Z"
+                                fill="white" />
+                        </svg></div>
                     <h2 class="faq-question-title">Any Question?</h2>
                     <p class="faq-question-subtitle">You can ask anything you want to know Feedback</p>
-                    
-                    <div class="faq-form-section">
-                        <label class="faq-form-label">Let me know</label>
-                        <div class="faq-input-wrapper">
-                            <input type="text" class="faq-text-input" placeholder="Enter Here">
-                            <button class="faq-submit-btn">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#00bcd4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
+                    <div class="faq-form-section"><label class="faq-form-label">Let me know</label>
+                        <div class="faq-input-wrapper"><input type="text" class="faq-text-input"
+                                placeholder="Enter Here"><button class="faq-submit-btn"><svg width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#00bcd4" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></button></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-     <footer class="faq-footer">
+    <footer class="faq-footer">
         <div class="faq-footer-content">
             <div class="faq-footer-column">
                 <h3 class="faq-footer-brand">Causlye</h3>
-                <p class="faq-footer-desc">Powerful Kitchen Degreaser for Restaurants & Cafes Making kitchens spotless, safe & eco-friendly.</p>
+                <p class="faq-footer-desc">Powerful Kitchen Degreaser for Restaurants & Cafes Making kitchens spotless,
+                    safe & eco-friendly.</p>
             </div>
-
             <div class="faq-footer-column">
                 <h4 class="faq-footer-heading">QUICK LINK</h4>
                 <ul class="faq-footer-links">
@@ -481,7 +619,6 @@
                     <li><a href="#">Book Now</a></li>
                 </ul>
             </div>
-
             <div class="faq-footer-column">
                 <h4 class="faq-footer-heading">FOLLOW US</h4>
                 <ul class="faq-footer-links">
@@ -491,7 +628,6 @@
                     <li><a href="#">X</a></li>
                 </ul>
             </div>
-
             <div class="faq-footer-column">
                 <h4 class="faq-footer-heading">CONTACT US</h4>
                 <ul class="faq-footer-links">
@@ -501,67 +637,13 @@
                 </ul>
             </div>
         </div>
-
         <div class="faq-footer-bottom">
             <p>© 2025 Causlye. All Rights Reserved.</p>
             <p>Created by Kreativity</p>
         </div>
     </footer>
-
-  <script async src="//www.instagram.com/embed.js"></script>
-
-  <script>
-    let slideIndex = 1;
-    let slideInterval;
-
-    showSlides(slideIndex);
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-      resetInterval();
-    }
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-      resetInterval();
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("carousel-image");
-      let dots = document.getElementsByClassName("dot");
-      let steps = document.getElementsByClassName("step-diamond");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      for (i = 0; i < steps.length; i++) {
-          steps[i].className = steps[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      steps[slideIndex-1].className += " active";
-    }
-
-    function autoSlides() {
-      slideIndex++;
-      showSlides(slideIndex);
-    }
-
-    function startInterval() {
-        slideInterval = setInterval(autoSlides, 5000);
-    }
-
-    function resetInterval() {
-        clearInterval(slideInterval);
-        startInterval();
-    }
-
-    startInterval();
-  </script>
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script> let slideIndex = 1; let slideInterval; showSlides(slideIndex); function currentSlide(n) { showSlides(slideIndex = n); resetInterval(); } function plusSlides(n) { showSlides(slideIndex += n); resetInterval(); } function showSlides(n) { let i; let slides = document.getElementsByClassName("carousel-image"); let dots = document.getElementsByClassName("dot"); let steps = document.getElementsByClassName("step-diamond"); if (n > slides.length) { slideIndex = 1 } if (n < 1) { slideIndex = slides.length } for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; } for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); } for (i = 0; i < steps.length; i++) { steps[i].className = steps[i].className.replace(" active", ""); } slides[slideIndex - 1].style.display = "block"; dots[slideIndex - 1].className += " active"; steps[slideIndex - 1].className += " active"; } function autoSlides() { slideIndex++; showSlides(slideIndex); } function startInterval() { slideInterval = setInterval(autoSlides, 5000); } function resetInterval() { clearInterval(slideInterval); startInterval(); } startInterval(); </script>
 </body>
+
 </html>
