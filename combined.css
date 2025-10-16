@@ -22,7 +22,7 @@ body {
 .navbar {
     width: 65%;
     height: 82px;
-    padding: 8px 15px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +34,7 @@ body {
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     border-radius: 25.33px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.473);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -393,6 +393,8 @@ nav a:hover {
 @media (max-width: 1280px) {
     .navbar {
         width: 80%;
+        padding: 10px 20px;
+
     }
 
     .hero-content h1,
@@ -551,6 +553,7 @@ nav a:hover {
     .navbar {
         width: 90%;
         padding: 10px 15px;
+
     }
 
     .logo {
@@ -644,8 +647,8 @@ nav a:hover {
     }
 
     .social-icons img { 
-        width: 32px; 
-        height: 32px; 
+        width: 35px; 
+        height: 35px; 
     }
 
     .features-banner {
@@ -1863,6 +1866,7 @@ h1 {
 }
 
 @media (max-width: 900px) {
+
     .faq-main-content {
         padding: 30px 20px;
     }
@@ -2031,6 +2035,7 @@ h1 {
 .mobile-nav.open {
     display: block;
     max-height: 400px;
+    padding: 20px 15px;
     opacity: 1;
     pointer-events: all;
 }
