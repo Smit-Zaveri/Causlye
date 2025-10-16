@@ -838,7 +838,7 @@ nav a:hover {
 }
 
 .product-image-container img {
-    max-width: 400px;
+    max-width: 280px;
     height: auto;
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
