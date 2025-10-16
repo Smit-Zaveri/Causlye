@@ -13,9 +13,21 @@
 <body>
     <header class="navbar">
         <div class="logo"><img loading="lazy" src="images/logo.png" alt="Causlye Logo"><span>Causlye</span></div>
-        <nav><a href="#">Home</a><a href="#">About</a><a href="#">FAQs</a></nav><a href="#" class="shop-btn">Shop
-            Now</a>
+        <nav><a href="#">Home</a><a href="#">About</a><a href="#">FAQs</a></nav>
+        <a href="#" class="shop-btn">Shop Now</a>
+        <button class="hamburger-btn"><img src="images/Burger.png" alt="Menu"></button>
     </header>
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <div class="logo"><img loading="lazy" src="images/logo.png" alt="Causlye Logo"><span>Causlye</span></div>
+            <button class="close-btn"><img src="images/close.png" alt="Close"></button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">FAQs</a>
+        </div>
+    </div>
     <section class="hero"><img loading="lazy" src="images/bg-kitchen.png" alt="Kitchen Background">
         <div class="green-circle" aria-hidden="true"></div>
         <div class="hero-content">
@@ -643,7 +655,90 @@
         </div>
     </footer>
     <script async src="//www.instagram.com/embed.js"></script>
-    <script> let slideIndex = 1; let slideInterval; showSlides(slideIndex); function currentSlide(n) { showSlides(slideIndex = n); resetInterval(); } function plusSlides(n) { showSlides(slideIndex += n); resetInterval(); } function showSlides(n) { let i; let slides = document.getElementsByClassName("carousel-image"); let dots = document.getElementsByClassName("dot"); let steps = document.getElementsByClassName("step-diamond"); if (n > slides.length) { slideIndex = 1 } if (n < 1) { slideIndex = slides.length } for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; } for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); } for (i = 0; i < steps.length; i++) { steps[i].className = steps[i].className.replace(" active", ""); } slides[slideIndex - 1].style.display = "block"; dots[slideIndex - 1].className += " active"; steps[slideIndex - 1].className += " active"; } function autoSlides() { slideIndex++; showSlides(slideIndex); } function startInterval() { slideInterval = setInterval(autoSlides, 5000); } function resetInterval() { clearInterval(slideInterval); startInterval(); } startInterval(); </script>
+    <script>
+        // Mobile Nav
+        const hamburgerBtn = document.querySelector('.hamburger-btn');
+        const closeBtn = document.querySelector('.close-btn');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const navbar = document.querySelector('.navbar');
+        const body = document.body;
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileNav.classList.add('open');
+            navbar.classList.add('menu-open');
+            body.classList.add('menu-open');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+            navbar.classList.remove('menu-open');
+            body.classList.remove('menu-open');
+        });
+
+        // Close menu when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('open');
+                navbar.classList.remove('menu-open');
+                body.classList.remove('menu-open');
+            });
+        });
+
+        let slideIndex = 1;
+        let slideInterval;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            resetInterval();
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            resetInterval();
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("carousel-image");
+            let dots = document.getElementsByClassName("dot");
+            let steps = document.getElementsByClassName("step-diamond");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            for (i = 0; i < steps.length; i++) {
+                steps[i].className = steps[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            steps[slideIndex - 1].className += " active";
+        }
+
+        function autoSlides() {
+            slideIndex++;
+            showSlides(slideIndex);
+        }
+
+        function startInterval() {
+            slideInterval = setInterval(autoSlides, 5000);
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startInterval();
+        }
+        startInterval();
+    </script>
 </body>
 
 </html>

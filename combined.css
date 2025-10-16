@@ -101,7 +101,8 @@ nav a:hover {
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
-    padding-top: 240px;
+
+    padding-top: min(240px, 25vh);
 }
 
 /* Background Image Styling */
@@ -119,7 +120,7 @@ nav a:hover {
 
 /* Hero Content */
 .hero-content {
-    z-index: 1;
+    z-index: 5;
     max-width: 90%;
     text-align: center;
     padding: 0 20px;
@@ -127,11 +128,11 @@ nav a:hover {
 }
 
 .tagline {
-    font-size: 1.875rem;
+    font-size: min(1.875rem, 2vw);
     /* Increased font size */
     letter-spacing: 2%;
     font-family: Poppins, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     /* Reduced margin */
     color: #1FA9E1;
     /* Light blue color from image */
@@ -142,7 +143,7 @@ nav a:hover {
     font-family: 'Impact', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 128px;
+    font-size: min(7rem, 6vw);
     line-height: 89%;
     letter-spacing: 0;
     text-transform: capitalize;
@@ -158,7 +159,8 @@ nav a:hover {
     font-family: 'Impact', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 128px;
+    font-size: min(7rem, 6vw);
+
     line-height: 89%;
     letter-spacing: 0;
     text-transform: capitalize;
@@ -171,7 +173,8 @@ nav a:hover {
     font-family: 'Impact', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 128px;
+    font-size: min(7rem, 6vw);
+
     line-height: 89%;
     letter-spacing: 0;
     text-transform: capitalize;
@@ -197,7 +200,7 @@ nav a:hover {
     left: 50%;
     bottom: 0; /* stick to the bottom edge of .hero */
     transform: translateX(-50%);
-    z-index: 0;
+    z-index: 1;
     pointer-events: none; /* decorative only */
     background-image: url('images/Subtract.png');
     background-repeat: no-repeat;
@@ -206,9 +209,9 @@ nav a:hover {
 
     /* Prefer modern aspect-ratio for predictable sizing */
     aspect-ratio: 7 / 4;
-    width: min(70vw, 700px);
+    width: min(45vw, 650px);
     /* Fallback for browsers that don't support aspect-ratio */
-    height: calc(min(70vw, 700px) * 4 / 7);
+    height: calc(min(35vw, 600px) * 4 / 7);
 }
 
 /* Anchor the product (bottle + CTA) to the bottom of the hero similar to the decorative .green-circle */
@@ -222,14 +225,14 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    width: min(70vw, 900px);
+    width: min(40vw, 750px);
     pointer-events: none; /* let interactive children handle events */
 }
 
 .hero > .product-container .product-img {
     position: relative; /* ensure bottom offsets in media queries work */
     pointer-events: auto; /* allow interactions if necessary */
-    margin-bottom: -80px;
+    margin-bottom: -75px;
     width: min(65vw, 810px);
     max-width: 100%;
 }
@@ -237,12 +240,12 @@ nav a:hover {
 .hero > .product-container .product-shop-btn {
     position: relative;
     z-index: 3;
-    pointer-events: auto; /* make button clickable */
+    pointer-events: auto;
 }
 
 .product-img {
     position: relative;
-    bottom: -10%;
+    /* bottom: -10%; */
     width: 810px;
     height: auto;
     z-index: 2;
@@ -253,7 +256,7 @@ nav a:hover {
 .product-shop-btn {
     position: relative;
     z-index: 3;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 15px 40px;
     background: #24a9e1;
     color: white;
@@ -420,9 +423,9 @@ nav a:hover {
     .hero {
         background-image: url('images/mobile-bg.png');
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center -120px; /* crop more top */
         background-size: cover;
-        padding-top: 180px; /* bring content down a touch under navbar */
+        padding-top: 90px; /* bring content down a touch under navbar */
     }
 
     /* Hide desktop bg image element on tablet */
@@ -437,7 +440,7 @@ nav a:hover {
         bottom: 0;
         left: 0;
         right: 0;
-        height: 40%;
+        height: 70%;
         background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 60%, rgba(255, 255, 255, 0) 100%);
         z-index: 1;
         pointer-events: none;
@@ -459,36 +462,44 @@ nav a:hover {
         transform: translateX(-50%);
         z-index: 2;
         width: 90%;
-        margin-top: 0;
+        margin-bottom: 250px;
+    }
+
+    .tagline {
+        font-size: 1.3rem;
+        color: #000;
     }
 
     .hero-content h1,
     .hero-content h1 .spotless,
     .hero-content h1 .minutes {
-        font-size: 80px;
+        font-size: 60px;
+        
     }
 
     .green-circle {
-        width: min(60vw, 450px);
+        width: 600px;
         aspect-ratio: 9 / 5;
         height: auto;
-        bottom: -8%;
+        z-index: 3;
     }
 
     /* Ensure bottle sits nicely above the green circle on tablet */
     .hero > .product-container { 
         width: min(80vw, 680px);
-        z-index: 0; /* Behind the overlay */
+        z-index: 4; /* Behind the overlay */
     }
     .hero > .product-container .product-img {
-        width: min(55vw, 520px);
+        width: 700px;
         bottom: 0;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
+        z-index: 5;
+        
     }
 
-    /* Hide shop button on tablet */
-    .hero > .product-container .product-shop-btn {
-        display: none;
+     .hero > .product-container .product-shop-btn {
+        bottom: 370px;
+        z-index: 5;
     }
 
     .features-banner {
@@ -514,9 +525,9 @@ nav a:hover {
     .hero {
         background-image: url('images/mobile-bg.png');
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center -90px; /* crop more top */
         background-size: cover;
-        padding-top: 150px;
+        padding-top: 90px; /* bring content higher */
     }
 
     /* Hide desktop bg image element on phones */
@@ -531,7 +542,7 @@ nav a:hover {
         bottom: 0;
         left: 0;
         right: 0;
-        height: 45%;
+        height: 55%;
         background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.98) 70%, rgba(255, 255, 255, 0) 100%);
         z-index: 1;
         pointer-events: none;
@@ -567,22 +578,25 @@ nav a:hover {
 
     .hero-content { 
         position: absolute;
-        bottom: 12%;
+        bottom: 20%; /* move up by reducing bottom spacing */
         left: 50%;
         transform: translateX(-50%);
         z-index: 2;
         width: 90%;
-        margin-top: 0;
+        margin-bottom: 40px;
     }
 
     .hero-content h1,
     .hero-content h1 .spotless,
     .hero-content h1 .minutes {
-        font-size: 48px;
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        line-height: 1.05;
+        word-break: break-word;
     }
 
     .tagline {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        color: #000;
     }
 
     .green-circle {
@@ -595,29 +609,40 @@ nav a:hover {
     /* Override generic product positioning for mobile hero */
     .hero > .product-container { 
         width: min(90vw, 520px);
-        z-index: 0; /* Behind the overlay */
     }
     .hero > .product-container .product-img {
-        width: min(70vw, 420px);
+        width: clamp(180px, 80vw, 340px);
+        height: auto;
+        position: absolute;
+        left: 50%;
         bottom: 0;
+        transform: translateX(-50%);
         margin-bottom: 0;
+        display: block;
     }
 
-    /* Hide shop button on mobile */
+    /* Ensure shop button is visible and positioned responsively on mobile */
     .hero > .product-container .product-shop-btn {
-        display: none;
+        display: block;
+        position: relative;
+        bottom:45vw;
+        font-size: 0.8rem;
+        padding: 10px 24px;
+        border-radius: 24px;
+        width: auto;
+        margin: 0 auto;
     }
 
     .social-icons {
-        right: 10px;
+        right: 15px;
     }
 
     .social-icons a {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
 
-    .social-icons img { width: 32px; height: 32px; }
+    .social-icons img { width: 28px; height: 28px; }
 
     .features-banner {
         height: 50px;
@@ -1945,5 +1970,156 @@ h1 {
 
     .faq-sponge-icon svg {
         width: 180px;
+    }
+}
+
+/* Hamburger Menu */
+.hamburger-btn {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002;
+    transition: opacity 0.3s ease;
+}
+
+.hamburger-btn img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.navbar.menu-open .hamburger-btn {
+    display: none !important;
+}
+
+.navbar.menu-open {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-height: 82px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 25.33px;
+    border: 2px solid rgba(255, 255, 255, 0.473);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mobile-nav.open {
+    display: block;
+    max-height: 400px;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mobile-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 42px;
+    flex-shrink: 0;
+}
+
+.mobile-nav .logo {
+    padding: 5px 12px;
+    background: white;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.mobile-nav .logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.mobile-nav .logo span {
+    font-size: 1.2rem;
+    color: #1FA9E1;
+    font-weight: 600;
+    /* margin-left: 2px; */
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.close-btn img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+    padding: 30px 0 0;
+}
+
+.mobile-nav.open .mobile-nav-links {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-nav-links a {
+    color: #044167;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.mobile-nav-links a:hover {
+    color: #1FA9E1;
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .navbar .shop-btn {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block !important;
+    }
+    
+    .navbar {
+        z-index: 1000;
+    }
+    
+    body.menu-open {
+        overflow: hidden;
     }
 }
