@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #1FA9E1;
+}
+
 @font-face {
     font-family: 'Impact';
     src: url('Fonts/impact/impact.ttf') format('truetype');
@@ -16,6 +20,7 @@ body {
     background: #fff;
     color: #222;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -26,16 +31,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 100;
+    z-index: 1000;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     border-radius: 25.33px;
     border: 2px solid rgba(255, 255, 255, 0.473);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .logo {
@@ -53,12 +59,11 @@ body {
     border-radius: 50%;
 }
 
-.logo span {
+.navbar .logo span {
+    color: var(--primary-color);
     font-weight: 600;
-    font-size: 1.5rem;
-    color: #1d9bf0;
+    font-size: 24px;
 }
-
 nav a {
     text-decoration: none;
     color: #044167;
@@ -72,6 +77,7 @@ nav a:hover {
 }
 
 .shop-btn {
+    background: #FFFFFF;
     background: #FFFFFF;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -843,6 +849,16 @@ nav a:hover {
     filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
 
+/* Laptop screens only - 100vh height */
+@media (min-width: 993px) {
+    .why-choose-us {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .why-choose-us-grid {
@@ -1101,15 +1117,8 @@ nav a:hover {
     object-fit: fill;
 }
 
-.demo-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Dark overlay */
+.demo-section:hover {
+    background-image: url('images/clean_platform.png');
 }
 
 .demo-content {
@@ -1549,7 +1558,6 @@ h1 {
 
 /* Main Content Styles */
 .faq-main-content {
-    height: 100vh;
     min-height: 100vh;
     padding: 60px 80px 80px;
     background-color: #FFFFFF;
@@ -1564,7 +1572,7 @@ h1 {
     font-size: 56px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    color: #1FA9E1;
+    color: var(--primary-color);
     margin-bottom: 16px;
     letter-spacing: -1px;
 }
@@ -1636,7 +1644,7 @@ h1 {
 
 .faq-plus-btn {
     background: none;
-    border: 2px solid #00bcd4;
+    border: 2px solid var(--primary-color);
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -1736,7 +1744,7 @@ h1 {
 }
 
 .faq-input-wrapper:focus-within {
-    border-color: #00bcd4;
+    border-color: var(--primary-color);
 }
 
 .faq-text-input {
@@ -1781,35 +1789,55 @@ h1 {
 
 /* Footer Styles */
 .faq-footer {
-    background-color: #00bcd4;
+    background-color: var(--primary-color);
     color: white;
-    padding: 50px 80px 30px;
+    padding: 60px 20px 40px;
 }
 
 .faq-footer-content {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 60px;
+}
+
+/* Desktop: Make wrapper invisible, show grid */
+.faq-footer-links-wrapper {
+    display: contents;
+}
+
+/* Desktop: Brand section takes first position */
+.faq-footer-brand-section {
+    order: -1;
 }
 
 .faq-footer-brand {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .faq-footer-desc {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.6;
-    opacity: 0.9;
+    opacity: 0.95;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    max-width: 90%;
 }
 
 .faq-footer-heading {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 
 .faq-footer-links {
@@ -1817,14 +1845,18 @@ h1 {
 }
 
 .faq-footer-links li {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
-.faq-footer-links a {
+.faq-footer-links a,
+.faq-footer-links li {
     color: white;
     text-decoration: none;
-    font-size: 13px;
-    opacity: 0.9;
+    font-size: 14px;
+    opacity: 0.95;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .faq-footer-links a:hover {
@@ -1832,12 +1864,23 @@ h1 {
 }
 
 .faq-footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 20px;
+    background-color: white;
+    color: #666;
+    border-top: none;
+    padding: 30px 20px;
+    margin: 40px -20px -40px -20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.faq-footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
-    opacity: 0.8;
+    align-items: center;
+    padding: 0 60px;
 }
 
 @media (max-width: 1200px) {
@@ -1856,18 +1899,41 @@ h1 {
     }
 
     .faq-footer {
-        padding: 40px 40px 25px;
+        padding: 50px 20px 30px;
     }
 
     .faq-footer-content {
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 50px;
+        padding: 0 20px;
+    }
+
+    .faq-footer-links-wrapper {
+        display: contents; /* Keep desktop behavior on tablet */
+    }
+    
+    .faq-footer-brand {
+        font-size: 28px;
+    }
+    
+    .faq-footer-heading {
+        font-size: 15px;
+    }
+    
+    .faq-footer-bottom {
+        margin: 30px -20px -30px -20px;
+        padding: 25px 20px;
+    }
+    
+    .faq-footer-bottom-content {
+        padding: 0 20px;
     }
 }
 
 @media (max-width: 900px) {
 
     .faq-main-content {
+        min-height: auto;
         padding: 30px 20px;
     }
 
@@ -1877,6 +1943,7 @@ h1 {
 
     .faq-subtitle {
         font-size: 14px;
+        max-width: 90%;
     }
 
     .faq-content-wrapper {
@@ -1929,28 +1996,93 @@ h1 {
     }
 
     .faq-footer {
-        padding: 35px 20px 20px;
+        padding: 40px 15px 25px;
     }
 
     .faq-footer-content {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 30px;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    /* Brand section at top */
+    .faq-footer-brand-section {
+        order: 1;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    /* Links wrapper below brand - horizontal row */
+    .faq-footer-links-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+        order: 2;
+    }
+
+    .faq-footer-links-wrapper .faq-footer-column {
+        flex: 0 1 auto;
+        text-align: left;
+    }
+    
+    .faq-footer-brand {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    
+    .faq-footer-desc {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.6;
+        opacity: 0.95;
+    }
+
+    .faq-footer-heading {
+        font-size: 14px;
+        margin-bottom: 14px;
+        font-weight: 600;
+    }
+
+    .faq-footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .faq-footer-links a,
+    .faq-footer-links li {
+        font-size: 13px;
+        line-height: 1.8;
     }
 
     .faq-footer-bottom {
+        font-size: 13px;
+        margin: 25px -15px -25px -15px;
+        padding: 20px 15px;
+    }
+    
+    .faq-footer-bottom-content {
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
         text-align: center;
+        padding: 0 5px;
     }
 }
 
 @media (max-width: 600px) {
+    .faq-main-content {
+        padding: 30px 20px 40px;
+    }
+
     .faq-main-title {
         font-size: 32px;
     }
 
     .faq-subtitle {
         font-size: 13px;
+        max-width: 100%;
     }
 
     .faq-faq-row {
@@ -1978,6 +2110,54 @@ h1 {
 
     .faq-sponge-icon svg {
         width: 180px;
+    }
+
+    /* Mobile footer adjustments */
+    .faq-footer {
+        padding: 30px 15px 20px;
+    }
+
+    .faq-footer-content {
+        padding: 0 15px;
+        gap: 25px;
+    }
+
+    .faq-footer-brand-section {
+        text-align: left;
+    }
+
+    .faq-footer-links-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .faq-footer-links-wrapper .faq-footer-column {
+        text-align: left;
+    }
+
+    .faq-footer-brand {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .faq-footer-desc {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .faq-footer-heading {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .faq-footer-links a,
+    .faq-footer-links li {
+        font-size: 11px;
+    }
+
+    .faq-footer-links li {
+        margin-bottom: 8px;
     }
 }
 
