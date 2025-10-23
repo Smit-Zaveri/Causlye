@@ -705,6 +705,10 @@ nav a:hover {
     gap: 40px;
 }
 
+.reel-card:nth-child(4) {
+    display: none;
+}
+
 .reel-card {
     background: #ffffff;
     border-radius: 20px;
@@ -732,6 +736,10 @@ nav a:hover {
         gap: 30px;
     }
 
+    .reel-card:nth-child(4) {
+        display: block;
+    }
+
     .reel-card .instagram-media {
         max-width: 100% !important;
     }
@@ -757,6 +765,10 @@ nav a:hover {
 
     .reel-card {
         padding: 16px;
+    }
+
+    .reel-card:nth-child(n+2) {
+        display: none;
     }
 
     .reel-card .instagram-media {
@@ -907,8 +919,8 @@ nav a:hover {
 .how-to-use-section h2 {
     font-size: 2.5rem;
     color: #00AEEF;
-    margin-bottom: 40px;
-    font-family: 'Impact', sans-serif;
+    margin-bottom: 20px;
+    font-family: ''Poppins', sans-serif', sans-serif;
 }
 
 .how-to-use-steps {
@@ -1053,23 +1065,45 @@ nav a:hover {
 
 @media (max-width: 768px) {
     .how-to-use-steps {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
     }
 
     .step-arrow {
-        transform: rotate(90deg);
-        margin: 15px 0;
+        transform: none;
+        margin: 0 10px;
+        width: 25px;
     }
 
     .step-diamond {
-        width: 200px;
-        height: 130px;
+        width: 50px;
+        height: 35px;
+    }
+
+    .step-diamond-inner {
+        font-size: 0.4rem;
     }
 
     .how-to-use-carousel {
         max-width: 90%;
         height: auto;
+    }
+
+    .carousel-dots {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 2px;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        margin: 2px 0;
     }
 
     .how-to-use-section h2 {
@@ -1079,12 +1113,12 @@ nav a:hover {
 
 @media (max-width: 480px) {
     .step-diamond {
-        width: 160px;
-        height: 110px;
+        width: 100px;
+        height: 73px;
     }
 
     .step-diamond-inner {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 
     .how-to-use-carousel {
@@ -1190,7 +1224,6 @@ nav a:hover {
     background: #00B4D8;
     padding: 50px 20px 80px;
     max-width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2172,10 +2205,14 @@ h1 {
     transition: opacity 0.3s ease;
 }
 
-.hamburger-btn img {
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
+.hamburger-btn {
+    color: #044167; /* use brand dark color, not blue */
+}
+
+.hamburger-btn svg {
+    width: 28px;
+    height: 28px;
+    display: block;
 }
 
 .navbar.menu-open .hamburger-btn {
@@ -2256,11 +2293,11 @@ h1 {
     padding: 0;
     transition: transform 0.3s ease;
 }
-
-.close-btn img {
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
+.close-btn { color: #044167; }
+.close-btn svg {
+    width: 28px;
+    height: 28px;
+    display: block;
 }
 
 .mobile-nav-links {
@@ -2306,6 +2343,10 @@ h1 {
     
     .navbar {
         z-index: 1000;
+    }
+    /* Ensure logo text size matches inside and outside the menu to avoid size jump */
+    .navbar .logo span { 
+        font-size: 1.2rem; 
     }
     
     body.menu-open {
