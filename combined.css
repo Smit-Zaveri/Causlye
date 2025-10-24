@@ -2239,7 +2239,7 @@ h1 {
     border: 2px solid rgba(255, 255, 255, 0.473);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     z-index: 1001;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     padding: 10px 15px;
@@ -2309,13 +2309,14 @@ h1 {
     gap: 20px;
     opacity: 0;
     transform: translateY(-10px);
-    transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+    transition: opacity 0.3s ease, transform 0.3s ease;
     padding: 30px 0 0;
 }
 
 .mobile-nav.open .mobile-nav-links {
     opacity: 1;
     transform: translateY(0);
+    transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
 }
 
 .mobile-nav-links a {
